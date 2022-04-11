@@ -16,6 +16,11 @@ li,
 a {
   font-family: "Montserrat", sans-serif;
 }
+
+a{
+  text-decoration: none;
+}
+
 /****************** navbar starts *******************/
 
 .navbar {
