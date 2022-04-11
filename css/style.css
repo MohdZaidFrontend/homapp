@@ -104,15 +104,13 @@ a {
   color: White;
 
   height: 50px;
-  padding:  0.5rem;
+  padding: 0.5rem;
   transition: 0.5s;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   border-radius: 5px;
 }
-
-
 
 .dropdown-content a:hover {
   background: rgb(17, 28, 43);
@@ -122,8 +120,7 @@ a {
   display: block;
 }
 
-
-.navbar  .menu  ul  li > div > div > div > div > a{
+.navbar .menu ul li > div > div > div > div > a {
   font-size: 12px;
 }
 .burger {
@@ -1063,6 +1060,66 @@ a {
   }
 }
 
+@media (max-width: 1100px) {
+  .footer {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .footer .left-section {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer .left-section .item {
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+  }
+  .footer .left-section .item .links {
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .footer .left-section .item .link {
+    align-items: center;
+  }
+
+  .footer .right-section {
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer .right-section .contact {
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+  }
+
+  .footer .left-section .address {
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+  }
+
+  .footer .left-section .address p {
+    text-align: center;
+  }
+}
+
 /**************** footer end *************/
 
 .end {
@@ -1081,12 +1138,32 @@ a {
 
 @media (max-width: 1700px) {
   .end {
-    width: 100%;
-
     padding: 40px;
   }
 
   .end p {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .end {
+    padding: 30px 20px;
+
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .end p {
+    text-align: center;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 600px) {
+  .end {
+    flex-direction: column;
+    gap: 10px;
   }
 }
