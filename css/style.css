@@ -240,11 +240,11 @@ a {
     width: 90%;
     padding: 20px 10px;
   }
-  .dropdown-content1 .dropdown-item{
+  .dropdown-content1 .dropdown-item {
     gap: 10px;
   }
 
-  .dropdown-content1 .dropdown-item a{
+  .dropdown-content1 .dropdown-item a {
     font-size: 10px;
   }
 }
