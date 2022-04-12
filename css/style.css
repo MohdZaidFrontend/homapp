@@ -17,17 +17,26 @@ a {
   font-family: "Montserrat", sans-serif;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
 /****************** navbar starts *******************/
 
 .navbar {
-  margin: 50px 60px;
+  padding: 40px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+ 
+  background: rgb(40, 52, 69);
+  background: linear-gradient(
+    241deg,
+    rgba(40, 52, 69, 1) 0%,
+    rgba(35, 31, 52, 1) 100%
+  );
+  box-shadow: 0px 3px 18px #00000029;
+
 }
 
 .navbar .homapp {
@@ -40,20 +49,13 @@ a{
 
 .navbar .homapp h3 {
   font-size: 40px;
+    color: white;
 }
 
 .navbar .homapp img {
   height: 46px;
-  width: 46px;
+  /* width: 46px; */
 }
-
-/* .navbar .menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 60px;
-} */
 
 .navlinks {
   width: 500px;
@@ -64,8 +66,9 @@ a{
 
 .navbar .menu a {
   text-decoration: none;
-  color: #353638;
-  font-size: 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .dropdown {
@@ -73,8 +76,9 @@ a{
 }
 
 .dropdown p {
-  color: #353638;
-  font-size: 20px;
+   color: white;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .dropdown-content {
@@ -83,7 +87,6 @@ a{
   position: absolute;
   top: 7vh;
   right: 30px;
-  width: 45%;
   right: 100px;
   height: auto;
   background: rgb(40, 52, 69);
@@ -94,7 +97,7 @@ a{
 
 .dropdown-content1 {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 .dropdown .dropdown-item {
@@ -102,9 +105,12 @@ a{
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  gap: 40px;
+  gap: 10px;
 }
 
+.navbar > .menu > ul > li > div > div > div > div > a {
+  color: white;
+}
 .dropdown-content a {
   color: White;
   height: 50px;
@@ -134,14 +140,14 @@ a{
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: black;
+  background-color: white;
   margin: 5px;
   transition: all 0.3s ease;
 }
 
 @media (max-width: 1700px) {
   .navbar {
-    margin: 30px 60px;
+    padding: 30px 60px;
   }
 
   .navbar .homapp {
@@ -154,21 +160,25 @@ a{
 
   .navbar .homapp img {
     height: 30px;
-    width: 30px;
+    /* width: 30px; */
   }
 
-  .navbar .menus {
+  .navbar .menu {
     gap: 40px;
   }
 
-  .navbar .menus a {
-    font-size: 15px;
+  .navbar .menu a {
+    font-size: 18px;
+  }
+
+  .dropdown p {
+     font-size: 18px;
   }
 }
 
 @media (max-width: 950px) {
   .navbar {
-    margin: 20px 20px;
+    padding: 20px 20px;
   }
 
   .burger {
@@ -178,11 +188,16 @@ a{
     overflow: hidden;
     position: absolute;
     right: 0;
-    top: 10vh;
+    top: 9vh;
     height: 90vh;
     width: 100%;
-    background: white;
-    color: black;
+      background: rgb(40, 52, 69);
+  background: linear-gradient(
+    241deg,
+    rgba(40, 52, 69, 1) 0%,
+    rgba(35, 31, 52, 1) 100%
+  );
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -888,7 +903,7 @@ a{
 /************** keyHighlights end  ********************/
 
 .footer {
-  margin-top: 200px;
+  margin-top: -1px;
   width: 100%;
   background: transparent linear-gradient(245deg, #283445 0%, #231f34 100%) 0%
     0% no-repeat padding-box;
@@ -1004,14 +1019,13 @@ a{
   gap: 50px;
 }
 
-.footer .right-section .contact .social-media img {
-  width: 20px;
-  height: 20px;
-}
+ .footer .right-section .contact .social-media img {
+    width: 32px;
+    height: 32px;
+  }
 
 @media (max-width: 1700px) {
   .footer {
-    margin-top: 100px;
     padding: 80px;
   }
 
@@ -1082,14 +1096,13 @@ a{
   }
 
   .footer .right-section .contact .social-media img {
-    width: 20px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
   }
 }
 
 @media (max-width: 1100px) {
   .footer {
-    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
