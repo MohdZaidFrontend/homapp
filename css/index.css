@@ -21,6 +21,7 @@ h3 {
 .headings {
   position: relative;
   overflow-y: hidden;
+  height: 100px;
 }
 
 .headings .small-heading {
@@ -72,6 +73,10 @@ h3 {
 }
 
 @media (max-width: 600px) {
+  .headings{
+      height: auto;
+
+  }
   .headings .small-heading {
     font-size: 25px;
     top: 10px;
@@ -459,7 +464,7 @@ td {
 
 .price-table .last-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 40px;
 }
