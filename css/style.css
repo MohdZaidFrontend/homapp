@@ -21,6 +21,28 @@ a {
   text-decoration: none;
 }
 
+h2{
+  font-size: 45px;
+}
+
+@media(max-width:1600px){
+  h2{
+  font-size: 40px;
+}
+}
+
+@media(max-width:1000px){
+  h2{
+  font-size: 35px;
+}
+}
+
+@media(max-width:600px){
+  h2{
+  font-size: 28px;
+}
+}
+
 /****************** navbar starts *******************/
 
 .navbar {
@@ -28,7 +50,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
+
   background: rgb(40, 52, 69);
   background: linear-gradient(
     241deg,
@@ -36,7 +58,6 @@ a {
     rgba(35, 31, 52, 1) 100%
   );
   box-shadow: 0px 3px 18px #00000029;
-
 }
 
 .navbar .homapp {
@@ -49,7 +70,7 @@ a {
 
 .navbar .homapp h3 {
   font-size: 40px;
-    color: white;
+  color: white;
 }
 
 .navbar .homapp img {
@@ -76,7 +97,7 @@ a {
 }
 
 .dropdown p {
-   color: white;
+  color: white;
   font-size: 18px;
   font-weight: 600;
 }
@@ -172,7 +193,7 @@ a {
   }
 
   .dropdown p {
-     font-size: 18px;
+    font-size: 18px;
   }
 }
 
@@ -191,12 +212,12 @@ a {
     top: 9vh;
     height: 90vh;
     width: 100%;
-      background: rgb(40, 52, 69);
-  background: linear-gradient(
-    241deg,
-    rgba(40, 52, 69, 1) 0%,
-    rgba(35, 31, 52, 1) 100%
-  );
+    background: rgb(40, 52, 69);
+    background: linear-gradient(
+      241deg,
+      rgba(40, 52, 69, 1) 0%,
+      rgba(35, 31, 52, 1) 100%
+    );
     color: white;
     display: flex;
     flex-direction: column;
@@ -326,14 +347,13 @@ a {
 
 @media (max-width: 800px) {
   .header .image {
-    height: 300px;
+    height: auto;
   }
 }
 
 @media (max-width: 600px) {
   .header {
     margin: 20px 40px;
-
     gap: 10px;
   }
 }
@@ -341,11 +361,10 @@ a {
 @media (max-width: 400px) {
   .header {
     margin: 20px 20px;
-
     gap: 10px;
   }
   .header .image {
-    height: 200px;
+    height: auto;
   }
 }
 
@@ -360,9 +379,6 @@ a {
   margin: 100px 100px;
 }
 
-.about h2 {
-  font-size: 50px;
-}
 
 .about p {
   font-size: 30px;
@@ -377,9 +393,7 @@ a {
     margin: 70px 100px;
   }
 
-  .about h2 {
-    font-size: 40px;
-  }
+  
 
   .about p {
     font-size: 20px;
@@ -398,10 +412,11 @@ a {
     margin: 70px 50px;
   }
 }
-/**************** about end *****************/
 
-.services {
-  margin: 150px 100px;
+/**************** about end *****************/
+/************ R.O Waterpurifier Services************/
+
+.RO-services {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -409,21 +424,669 @@ a {
   gap: 100px;
 }
 
-.services h2 {
-  font-size: 50px;
+
+
+.RO-services .cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 80px;
+  padding: 20px 0;
 }
+
+.RO-services .cards .card {
+  width: 350px;
+  height: auto;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 3px 3px 10px #00000029;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px 20px;
+}
+
+.RO-services p {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #212a38;
+}
+
+.RO-services .cards .card img {
+  width: 100%;
+  height: 265px;
+}
+
+/* .RO-services .cards .card ul{
+  font-size: 16px;
+  color: #000000;
+} */
+
+.RO-services .cards .card ul li {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.RO-services .cards .card .price {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1700px) {
+  .RO-services {
+    gap: 80px;
+  }
+
+  .RO-services .cards {
+    gap: 30px;
+    padding: 15px 40px;
+  }
+
+  .RO-services .cards .card {
+    width: 300px;
+
+    gap: 12px;
+    padding: 20px 15px;
+  }
+
+  .RO-services p {
+    font-size: 18px;
+  }
+
+  .RO-services .cards .card img {
+    height: 200px;
+  }
+
+  .RO-services .cards .card ul li {
+    font-size: 15px;
+
+    margin-bottom: 8px;
+  }
+
+  .RO-services .cards .card .price {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .RO-services .cards {
+    gap: 100px;
+  }
+}
+@media (max-width: 600px) {
+  .RO-services .cards {
+    gap: 25px;
+  }
+  .RO-services .cards .card {
+    width: 350px;
+    height: 600px;
+  }
+  .RO-services .cards .card p {
+    font-size: 16px;
+  }
+  .RO-services .cards .card li {
+    font-size: 14px;
+  }
+}
+
+/************** plumbing services *************/
+.plumbing-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+
+.plumbing-service .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 70px;
+  padding: 20px;
+}
+
+.plumbing-service .cards .card {
+  width: 450px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+.plumbing-service .cards .card .image {
+  width: 100%;
+  height: 400px;
+}
+.plumbing-service .cards .card .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.plumbing-service .cards .card .content {
+  width: 100%;
+  height: 220px;
+  padding: 40px 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fdfdfd 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 20px 20px 0 0;
+  margin-top: -20px;
+  gap: 30px;
+}
+.plumbing-service .cards .card .content h3 {
+  font-size: 25px;
+  text-align: center;
+}
+.plumbing-service .cards .card .content .data {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 22px;
+}
+
+@media (max-width: 1700px) {
+  .plumbing-service {
+    gap: 100px;
+  }
+
+  .plumbing-service .cards {
+    gap: 50px;
+    padding: 15px;
+  }
+
+  .plumbing-service .cards .card {
+    width: 300px;
+    padding: 20px 10px;
+    border-radius: 10px;
+  }
+  .plumbing-service .cards .card .image {
+    width: 100%;
+    height: 250px;
+    overflow-y: hidden;
+  }
+
+  .plumbing-service .cards .card .content {
+    width: 100%;
+    height: 140px;
+    padding: 20px 8px;
+    gap: 22px;
+  }
+  .plumbing-service .cards .card .content h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .plumbing-service .cards .card .content .data {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .plumbing-service {
+    gap: 80px;
+  }
+
+  .plumbing-service .cards {
+    gap: 40px;
+    padding: 12px;
+  }
+
+  .plumbing-service .cards .card {
+    width: 280px;
+    padding: 18px 8px;
+  }
+  .plumbing-service .cards .card .image {
+    height: 220px;
+  }
+
+  .plumbing-service .cards .card .content {
+    height: 120px;
+    padding: 15px 8px;
+    gap: 20px;
+  }
+  .plumbing-service .cards .card .content h3 {
+    font-size: 16px;
+  }
+  .plumbing-service .cards .card .content .data {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .plumbing-service {
+    gap: 30px;
+  }
+
+  .plumbing-service .cards {
+    gap: 15px;
+    padding: 12px;
+  }
+
+  .plumbing-service .cards .card {
+    width: 280px;
+    padding: 15px 8px;
+  }
+  .plumbing-service .cards .card .image {
+    height: 200px;
+  }
+
+  .plumbing-service .cards .card .content {
+    height: 110px;
+    gap: 20px;
+  }
+  .plumbing-service .cards .card .content h3 {
+    font-size: 15px;
+  }
+  .plumbing-service .cards .card .content .data {
+    font-size: 13.5px;
+  }
+}
+
+/***************** Main Services ***************/
+
+.service1 {
+  margin: 100px 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+
+.service1 h1 {
+  font-size: 40px;
+  color: #000000;
+}
+
+.service1 .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+
+.service1 .cards .card {
+  width: 500px;
+  height: 650px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.service1 .cards .card .image {
+  width: 500px;
+  height: 456px;
+  overflow-y: hidden;
+}
+.service1 .cards .card .image img {
+  width: 100%;
+  height: 100%;
+}
+.service1 .cards .card .content {
+  width: 500px;
+  height: 211px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fdfdfd 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 20px 20px 0 0;
+  margin-top: -30px;
+  gap: 35px;
+  padding: 10px;
+}
+.service1 .cards .card .content h3 {
+  font-size: 30px;
+  text-align: center;
+}
+.service1 .cards .card .content .data {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+}
+
+@media (max-width: 1700px) {
+  .service1 {
+    margin: 50px 50px;
+    gap: 80px;
+  }
+
+  .service1 h1 {
+    font-size: 30px;
+  }
+
+  .service1 .cards {
+    gap: 40px;
+  }
+
+  .service1 .cards .card {
+    width: 350px;
+    height: 400px;
+  }
+  .service1 .cards .card .image {
+    width: 350px;
+    height: 370px;
+  }
+  .service1 .cards .card.image img {
+    width: 100%;
+    height: 100%;
+  }
+  .service1 .cards .card .content {
+    width: 350px;
+    height: 150px;
+
+    margin-top: -20px;
+    gap: 25px;
+    padding: 10px;
+  }
+  .service1 .cards .card .content h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .service1 .cards .card .content .data {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+.deep-service {
+  margin: 30px 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 50px;
+}
+.deep-service .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+
+.deep-service .card {
+  padding: 35px 20px;
+  width: 369px;
+  height: 980px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  border: 2px solid #e3e3e3;
+  border-radius: 10px;
+}
+
+.deep-service .card h3 {
+  font-size: 20px;
+  overflow-y: hidden;
+}
+
+.deep-service .card img {
+  width: 326px;
+  height: 205px;
+  border-radius: 10px;
+  overflow-y: hidden;
+}
+
+.deep-service .card .table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: hidden;
+}
+
+.deep-service .card .table h4 {
+  font-size: 20px;
+}
+
+.deep-service .card .table ul {
+  color: #44474e;
+  font-size: 20px;
+  list-style: disc;
+  list-style-position: inside;
+  overflow-y: hidden;
+}
+
+.deep-service .card .table table {
+  padding: 10px;
+
+  font-size: 20px;
+}
+
+.table table thead th {
+  text-align: center;
+  padding: 10px;
+  font-size: 17px;
+}
+
+.table table tr td {
+  padding: 25px 0;
+  text-align: center;
+  font-size: 15px;
+}
+
+.table table tr .entry1 {
+  font-size: 12px;
+}
+.table table .line {
+  text-decoration: line-through;
+}
+
+@media (max-width: 1700px) {
+  .deep-service {
+    margin: 50px auto;
+    gap: 40px;
+  }
+
+  .deep-service h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .deep-service .cards {
+    gap: 20px;
+  }
+
+  .deep-service .card {
+    padding: 15px 0px;
+    width: 250px;
+    height: 600px;
+    gap: 15px;
+  }
+
+  .deep-service .card h3 {
+    font-size: 15px;
+  }
+
+  .deep-service .card img {
+    width: 220px;
+    height: 200px;
+  }
+
+  .deep-service .card .table {
+    gap: 5px;
+  }
+
+  .deep-service .card .table h4 {
+    font-size: 10px;
+  }
+
+  .deep-service .card .table ul {
+    font-size: 10px;
+  }
+
+  .deep-service .card .table table {
+    padding: 10px 0px 0px 10px;
+    font-size: 10px;
+  }
+
+  .table table thead th {
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  .table table tr td {
+    padding: 10px 0;
+    font-size: 13px;
+  }
+
+  .table table tr .entry1 {
+    font-size: 10px;
+  }
+  .table table .line {
+    text-decoration: line-through;
+  }
+}
+
+@media (max-width: 1460px) {
+  .deep-service {
+    margin: 30px auto;
+    gap: 50px;
+  }
+  .deep-service .cards {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .service h1 {
+    font-size: 22px;
+  }
+
+  .deep-service .card {
+    width: 250px;
+    height: 550px;
+    gap: 10px;
+  }
+  .deep-service .card h3 {
+    font-size: 12px;
+  }
+  .deep-service .card img {
+    width: 180px;
+    height: 150px;
+  }
+
+  .deep-service .card .table {
+    gap: 5px;
+  }
+
+  .deep-service .card .table h4 {
+    font-size: 12px;
+  }
+
+  .deep-service .card .table ul {
+    font-size: 10px;
+  }
+
+  .deep-service .card .table table {
+    padding: 8px 0px 0px 8px;
+    font-size: 8px;
+  }
+
+  .table table thead th {
+    padding: 10px;
+    font-size: 8px;
+  }
+
+  .table table tr td {
+    padding: 8px 0;
+    font-size: 13px;
+  }
+
+  .table table tr .entry1 {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .deep-service {
+    margin: 0px 120px;
+  }
+  .deep-service .cards {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 800px) {
+  .deep-service {
+    margin: 0px 25px;
+  }
+  .deep-service .cards {
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .deep-service {
+    margin: 0px 25px;
+  }
+  .deep-service .cards {
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+/******************* Service Start *********************/
+.services {
+  margin: 150px 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+}
+
+
 
 .services .cards {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 65px;
+  gap: 60px;
   flex-wrap: wrap;
+  padding: 20px 10px;
 }
 
 .services .cards .card {
   width: 366px;
-  height: 326px;
+  height: 300px;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 3px 3px 10px #00000029;
   border-radius: 10px;
@@ -441,22 +1104,20 @@ a {
 }
 
 .services .cards .card img {
-  width: 326px;
+  width: 100%;
   height: 192px;
 }
 
 @media (max-width: 1700px) {
   .services {
-    margin: 80px 80px;
-    gap: 70px;
+    margin: 80px 100px;
+    gap: 90px;
   }
 
-  .services h2 {
-    font-size: 40px;
-  }
+
 
   .services .cards {
-    gap: 100px;
+    gap: 80px;
   }
 
   .services .cards .card {
@@ -464,6 +1125,7 @@ a {
     height: 250px;
 
     gap: 10px;
+    padding: 0 10px;
   }
 
   .services .cards .card p {
@@ -471,7 +1133,7 @@ a {
   }
 
   .services .cards .card img {
-    width: 250px;
+    width: 100%;
     height: 150px;
   }
 }
@@ -490,11 +1152,12 @@ a {
 
 @media (max-width: 1100px) {
   .services {
-    margin: 0px 120px;
+    margin: 0px 80px;
   }
   .services .cards {
-    justify-content: space-around;
-    align-items: center;
+    gap: 40px;
+
+    padding: 20px 10px;
   }
 }
 @media (max-width: 800px) {
@@ -510,7 +1173,9 @@ a {
 
 @media (max-width: 600px) {
   .services {
-    margin: 0px 25px;
+    margin: 10px 20px;
+
+    gap: 30px;
   }
   .services .cards {
     justify-content: center;
@@ -521,48 +1186,6 @@ a {
 
 /**************** services end *****************/
 
-.call-to-action {
-  width: auto;
-  height: 100px;
-  background: #010101 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 100px 200px;
-}
-
-.call-to-action p {
-  font-size: 30px;
-  color: #fefefe;
-}
-
-.call-to-action button {
-  font-size: 30px;
-  color: #082e5a;
-  padding: 15px 120px;
-  font-weight: bold;
-}
-
-@media (max-width: 1700px) {
-  .call-to-action {
-    height: 80px;
-    margin: 50px 100px;
-  }
-
-  .call-to-action p {
-    font-size: 20px;
-  }
-
-  .call-to-action button {
-    font-size: 20px;
-
-    padding: 10px 10px;
-  }
-}
-
-/********* call-to-action ends ***********/
-
 .commercial {
   margin: 150px 150px;
   display: flex;
@@ -572,14 +1195,12 @@ a {
   gap: 80px;
 }
 
-.commercial h2 {
-  font-size: 50px;
-}
+
 
 .commercial .items {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 90px;
 }
@@ -623,14 +1244,11 @@ a {
     gap: 50px;
   }
 
-  .commercial h2 {
-    font-size: 40px;
-  }
+  
 
   .commercial .items {
-    justify-content: center;
-    align-items: center;
     gap: 80px;
+    overflow-y: hidden;
   }
 
   .commercial .items .item {
@@ -648,6 +1266,12 @@ a {
   .commercial .items .item p {
     font-size: 15px;
   }
+}
+@media (max-width: 1460px) {
+  .commercial .items {
+    overflow-y: hidden;
+  }
+
 }
 
 @media (max-width: 1200px) {
@@ -668,52 +1292,115 @@ a {
 /***************** commercial end ****************/
 
 .call-to-action {
-  width: auto;
+  width: 80%;
   height: 100px;
   background: #010101 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
-  margin: 100px 200px;
+  margin: 100px auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  overflow-y: hidden;
 }
 
-.call-to-action p {
-  font-size: 30px;
+.call-to-action h3 {
+  font-size: 25px;
   color: #fefefe;
 }
 
 .call-to-action button {
-  width: 382px;
-  height: 68px;
+  padding: 10px 60px;
   background: #ffffff 0% 0% no-repeat padding-box;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   color: #082e5a;
 }
 
 @media (max-width: 1700px) {
   .call-to-action {
-    height: 80px;
-    margin: 80px 100px;
+    margin: 80px auto;
   }
 
-  .call-to-action p {
+  .call-to-action h3 {
+    font-size: 22px;
+  }
+
+  .call-to-action button {
+    padding: 10px 50px;
+    font-size: 22px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .call-to-action {
+    margin: 70px auto;
+      height: 70px;
+      width: 90%;
+  }
+
+  .call-to-action h3 {
     font-size: 20px;
   }
 
   .call-to-action button {
-    width: 280px;
-    height: 60px;
+    padding: 10px 40px;
     font-size: 20px;
   }
+}
+
+@media(max-width:800px){
+  .call-to-action {
+  width: 70%;
+  height: auto;
+ padding: 20px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+ gap: 20px;
+}
+
+.call-to-action h3 {
+  text-align: center;
+  font-size: 19px;
+  color: #fefefe;
+}
+
+.call-to-action button {
+  padding: 9px 40px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  font-size: 18px;
+  font-weight: bold;
+  color: #082e5a;
+}
+}
+
+
+@media(max-width:600px){
+  .call-to-action {
+  width: 90%;
+  
+ padding: 10px 20px;
+  
+ gap: 15px;
+}
+
+.call-to-action h3 {
+ 
+  font-size: 18px;
+
+}
+
+.call-to-action button {
+  padding: 9px 35px;
+  
+  font-size: 17px;
+ 
+}
 }
 
 /***************** call-to-action end *************/
 
 .scope {
-  margin: 200px 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -721,39 +1408,39 @@ a {
   gap: 100px;
 }
 
-.scope h2 {
-  font-size: 50px;
-}
+
 
 .scope .scopeElements {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
   flex-wrap: wrap;
+  padding: 20px;
 }
 
 .scope .scopeElements .element {
   width: 400px;
-  height: 400px;
+  max-height: 600px;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 18px #524e4e29;
-  border: 1px solid #ededed;
+  border: 1px solid #ffffff;
   border-radius: 10px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
-  padding: 12px;
+  padding: 20px 10px;
   flex-direction: column;
 }
 
 .scope .scopeElements .element img {
-  width: 375px;
+  width: 100%;
   height: 214px;
+  border-radius: 5px;
 }
 
-.scope .scopeElements .element h3 {
+.scope .scopeElements .element h4 {
   font-size: 25px;
   color: #090101fc;
   text-align: center;
@@ -762,40 +1449,91 @@ a {
 .scope .scopeElements .element ul {
   list-style-type: disc;
   list-style-position: inside;
+  font-size: 20px;
+  color: #656565fc;
+  padding: 0 10px;
+}
+
+.scope .scopeElements .element ul li {
   font-size: 16px;
+  margin-bottom: 15px;
   color: #656565fc;
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 1800px) {
   .scope {
-    margin: 80px 90px;
-    gap: 60px;
+    gap: 80px;
   }
 
-  .scope h2 {
-    font-size: 40px;
-  }
   .scope .scopeElements {
+    display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 50px;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 15px;
   }
 
-  .scope .scopeElements .element h3 {
-    font-size: 18px;
+  .scope .scopeElements .element {
+    width: 300px;
+    gap: 15px;
+    padding: 15px 10px;
+    flex-direction: column;
   }
-  .scope .scopeElements .element ul {
-    font-size: 12px;
+
+  .scope .scopeElements .element img {
+    width: 100%;
+    height: 190px;
+  }
+
+  .scope .scopeElements .element h4 {
+    font-size: 22px;
+  }
+
+  .scope .scopeElements .element ul li {
+    font-size: 14px;
+    margin-bottom: 12px;
   }
 }
 
 @media (max-width: 1400px) {
+  .scope {
+    gap: 60px;
+  }
+
+  .scope .scopeElements {
+    gap: 25px;
+    padding: 12px;
+  }
+
+  .scope .scopeElements .element {
+    width: 280px;
+    gap: 15px;
+    padding: 12px 8px;
+  }
+
+  .scope .scopeElements .element img {
+    width: 100%;
+    height: 170px;
+  }
+
+  .scope .scopeElements .element h4 {
+    font-size: 21px;
+  }
+
+  .scope .scopeElements .element ul li {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+}
+
+/* @media (max-width: 1400px) {
   .scope {
     margin: 0px 50px;
   }
   .scope .scopeElements {
     gap: 100px;
   }
+
 }
 
 @media (max-width: 1000px) {
@@ -803,6 +1541,13 @@ a {
     gap: 50px;
   }
 }
+@media (max-width: 600px) {
+  .scope .scopeElements .element ul {
+    font-size: 8px;
+    overflow-y: hidden;
+    padding: 10px;
+  }
+} */
 
 /************* scope ends *****************/
 
@@ -815,16 +1560,14 @@ a {
   gap: 160px;
 }
 
-.keyHighlights h2 {
-  font-size: 50px;
-  color: #090101fc;
-}
+
 
 .keyHighlights .keys {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 240px;
+  /* gap: 240px; */
   flex-wrap: wrap;
 }
 
@@ -856,13 +1599,10 @@ a {
     gap: 70px;
   }
 
-  .keyHighlights h2 {
-    font-size: 40px;
-  }
-
+  /* 
   .keyHighlights .keys {
     gap: 140px;
-  }
+  } */
 
   .keyHighlights .key {
     width: 100px;
@@ -1019,10 +1759,10 @@ a {
   gap: 50px;
 }
 
- .footer .right-section .contact .social-media img {
-    width: 32px;
-    height: 32px;
-  }
+.footer .right-section .contact .social-media img {
+  width: 32px;
+  height: 32px;
+}
 
 @media (max-width: 1700px) {
   .footer {
