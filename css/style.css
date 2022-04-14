@@ -21,26 +21,26 @@ a {
   text-decoration: none;
 }
 
-h2{
+h2 {
   font-size: 45px;
 }
 
-@media(max-width:1600px){
-  h2{
-  font-size: 40px;
-}
-}
-
-@media(max-width:1000px){
-  h2{
-  font-size: 35px;
-}
+@media (max-width: 1600px) {
+  h2 {
+    font-size: 40px;
+  }
 }
 
-@media(max-width:600px){
-  h2{
-  font-size: 28px;
+@media (max-width: 1000px) {
+  h2 {
+    font-size: 35px;
+  }
 }
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 28px;
+  }
 }
 
 /****************** navbar starts *******************/
@@ -305,6 +305,9 @@ h2{
   color: #000000;
 }
 
+.header p img {
+  width: 12px;
+}
 .header .image {
   width: 100%;
   height: 666px;
@@ -379,7 +382,6 @@ h2{
   margin: 100px 100px;
 }
 
-
 .about p {
   font-size: 30px;
   line-height: 45px;
@@ -392,8 +394,6 @@ h2{
     gap: 30px;
     margin: 70px 100px;
   }
-
-  
 
   .about p {
     font-size: 20px;
@@ -423,8 +423,6 @@ h2{
   flex-direction: column;
   gap: 100px;
 }
-
-
 
 .RO-services .cards {
   display: flex;
@@ -834,7 +832,6 @@ h2{
   gap: 60px;
 }
 
-
 .deep-service .card {
   padding: 35px 20px;
   width: 369px;
@@ -1073,8 +1070,6 @@ h2{
   gap: 100px;
 }
 
-
-
 .services .cards {
   display: flex;
   justify-content: center;
@@ -1097,7 +1092,7 @@ h2{
   gap: 25px;
 }
 
-.services .cards .card p {
+.services .cards .card h3 {
   color: #212a38;
   font-size: 20px;
   text-align: center;
@@ -1113,8 +1108,6 @@ h2{
     margin: 80px 100px;
     gap: 90px;
   }
-
-
 
   .services .cards {
     gap: 80px;
@@ -1195,8 +1188,6 @@ h2{
   gap: 80px;
 }
 
-
-
 .commercial .items {
   display: flex;
   justify-content: center;
@@ -1244,8 +1235,6 @@ h2{
     gap: 50px;
   }
 
-  
-
   .commercial .items {
     gap: 80px;
     overflow-y: hidden;
@@ -1271,7 +1260,6 @@ h2{
   .commercial .items {
     overflow-y: hidden;
   }
-
 }
 
 @media (max-width: 1200px) {
@@ -1300,6 +1288,7 @@ h2{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-radius: 10px;
 }
 
 .call-to-action h3 {
@@ -1313,6 +1302,7 @@ h2{
   font-size: 25px;
   font-weight: bold;
   color: #082e5a;
+  border-radius: 10px;
 }
 
 @media (max-width: 1700px) {
@@ -1330,12 +1320,11 @@ h2{
   }
 }
 
-
 @media (max-width: 1200px) {
   .call-to-action {
     margin: 70px auto;
-      height: 70px;
-      width: 90%;
+    height: 70px;
+    width: 90%;
   }
 
   .call-to-action h3 {
@@ -1348,54 +1337,50 @@ h2{
   }
 }
 
-@media(max-width:800px){
+@media (max-width: 800px) {
   .call-to-action {
-  width: 70%;
-  height: auto;
- padding: 20px;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
- gap: 20px;
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .call-to-action h3 {
+    text-align: center;
+    font-size: 19px;
+    color: #fefefe;
+  }
+
+  .call-to-action button {
+    padding: 9px 40px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    font-size: 18px;
+    font-weight: bold;
+    color: #082e5a;
+  }
 }
 
-.call-to-action h3 {
-  text-align: center;
-  font-size: 19px;
-  color: #fefefe;
-}
-
-.call-to-action button {
-  padding: 9px 40px;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  font-size: 18px;
-  font-weight: bold;
-  color: #082e5a;
-}
-}
-
-
-@media(max-width:600px){
+@media (max-width: 600px) {
   .call-to-action {
-  width: 90%;
-  
- padding: 10px 20px;
-  
- gap: 15px;
-}
+    width: 90%;
 
-.call-to-action h3 {
- 
-  font-size: 18px;
+    padding: 10px 20px;
 
-}
+    gap: 15px;
+  }
 
-.call-to-action button {
-  padding: 9px 35px;
-  
-  font-size: 17px;
- 
-}
+  .call-to-action h3 {
+    font-size: 18px;
+  }
+
+  .call-to-action button {
+    padding: 9px 35px;
+
+    font-size: 17px;
+  }
 }
 
 /***************** call-to-action end *************/
@@ -1407,8 +1392,6 @@ h2{
   flex-direction: column;
   gap: 100px;
 }
-
-
 
 .scope .scopeElements {
   display: flex;
@@ -1526,28 +1509,6 @@ h2{
   }
 }
 
-/* @media (max-width: 1400px) {
-  .scope {
-    margin: 0px 50px;
-  }
-  .scope .scopeElements {
-    gap: 100px;
-  }
-
-}
-
-@media (max-width: 1000px) {
-  .scope .scopeElements {
-    gap: 50px;
-  }
-}
-@media (max-width: 600px) {
-  .scope .scopeElements .element ul {
-    font-size: 8px;
-    overflow-y: hidden;
-    padding: 10px;
-  }
-} */
 
 /************* scope ends *****************/
 
@@ -1560,14 +1521,11 @@ h2{
   gap: 160px;
 }
 
-
-
 .keyHighlights .keys {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* gap: 240px; */
   flex-wrap: wrap;
 }
 
@@ -1598,11 +1556,6 @@ h2{
 
     gap: 70px;
   }
-
-  /* 
-  .keyHighlights .keys {
-    gap: 140px;
-  } */
 
   .keyHighlights .key {
     width: 100px;

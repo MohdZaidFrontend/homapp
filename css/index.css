@@ -73,9 +73,8 @@ h3 {
 }
 
 @media (max-width: 600px) {
-  .headings{
-      height: auto;
-
+  .headings {
+    height: auto;
   }
   .headings .small-heading {
     font-size: 25px;
@@ -1176,11 +1175,9 @@ td {
   }
 }
 
-
-
 /************************ Faq Start *************************/
 
- .faq {
+.faq {
   margin-top: -1px;
   background: rgb(40, 52, 69);
   background: linear-gradient(
@@ -1195,14 +1192,13 @@ td {
   justify-content: center;
   align-items: center;
   gap: 100px;
-  
 }
 
 .faq .item {
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .accordion {
- background: #373c50 0% 0% no-repeat padding-box;
+  background: #373c50 0% 0% no-repeat padding-box;
   border: 1px solid red;
   border-radius: 6px;
   padding: 30px 20px;
@@ -1243,236 +1239,43 @@ margin-bottom: 10px;
   transition: max-height 0.2s ease-out;
 }
 
-.panel p{
+.panel p {
   font-size: 16px;
   padding: 20px 10px;
 }
 
+@media (max-width: 1700px) {
+  .faq {
+    padding: 80px 140px;
 
-@media(max-width:1700px){
-   .faq {
-
-  padding: 80px 140px;
-  
-  gap: 80px;
-  
-}
+    gap: 80px;
+  }
 }
 
+@media (max-width: 1400px) {
+  .faq {
+    padding: 60px 100px;
 
-@media(max-width:1400px){
-   .faq {
-
-  padding: 60px 100px;
-  
-  gap: 60px;
-  
-}
+    gap: 60px;
+  }
 }
 
+@media (max-width: 700px) {
+  .faq {
+    padding: 20px 40px;
 
-@media(max-width:700px){
-   .faq {
-
-  padding: 20px 40px;
-  
-  gap: 60px;
-  
-}
-
-.accordion {
-
-  padding: 20px 15px;
-  
- 
-}
-
-
-.panel p{
-  font-size: 14px;
-  padding: 10px;
-}
-
-}
-
-
-/* .faq {
-  margin-top: -1px;
-  background: rgb(40, 52, 69);
-  background: linear-gradient(
-    241deg,
-    rgba(40, 52, 69, 1) 0%,
-    rgba(35, 31, 52, 1) 100%
-  );
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 100px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-}
-
-.accordian {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.accordian .item {
-  width: 1400px;
-  background: #373c50 0% 0% no-repeat padding-box;
-  border: 1px solid #414658;
-  border-radius: 6px;
-  padding: 30px 20px;
-  cursor: pointer;
-}
-
-.accordian .item .title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.accordian .item .title h2 {
-  color: #ffffff;
-  font-size: 20px;
-}
-
-.accordian .item .title img {
-  height: 45px;
-  transition: 0.3s;
-}
-
-.reverse {
-  transition: 0.3s;
-  transform: rotate(180deg);
-}
-
-.accordian .item .content {
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-}
-
-.accordian .item .content.show {
-  height: auto;
-  max-height: 9999px;
-  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
-}
-
-.accordian .item .content p {
-  margin-top: 10px;
-  font-size: 18px;
-} */
-
-/* @media (max-width: 1700px) {
-  .accordian .item {
-    width: 1200px;
-    padding: 13px 25px;
+    gap: 60px;
   }
 
-  .accordian .item .title h2 {
-    font-size: 15px;
+  .accordion {
+    padding: 20px 15px;
   }
 
-  .accordian .item .title img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .accordian .item .content p {
+  .panel p {
     font-size: 14px;
+    padding: 10px;
   }
 }
-
-@media (max-width: 1200px) {
-
-  .accordian .item {
-    width: 900px;
-    padding: 10px 25px;
-  }
-
-  .accordian .item .title h2 {
-    font-size: 15px;
-  }
-
-  .accordian .item .title img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .accordian .item .content p {
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .accordian .item {
-    width: 750px;
-    padding: 10px 25px;
-  }
-
-  .accordian .item .title h2 {
-    font-size: 13px;
-  }
-
-  .accordian .item .title img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .accordian .item .content p {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 820px) {
-  .faq {
-    height: auto;
-    gap: 40px;
-
-    padding: 80px 30px;
-  }
-  .accordian .item {
-    width: 620px;
-    padding: 10px 25px;
-  }
-}
-
-@media (max-width: 600px) {
-  .faq {
-    height: auto;
-    gap: 40px;
-
-    padding: 50px 30px;
-  }
-  .accordian .item {
-    width: 100%;
-    padding: 10px 15px;
-  }
-
-  .accordian .item .title h2 {
-    font-size: 12px;
-  }
-
-  .accordian .item .title img {
-    width: 34px;
-    height: 34px;
-  }
-
-  .accordian .item .content p {
-    margin-top: 20px;
-    font-size: 12px;
-  }
-}
- */
 
 /******************** Numbers Start ************************/
 .numbers {
