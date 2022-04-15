@@ -13,7 +13,9 @@ h6,
 p,
 button,
 li,
-a {
+a,
+th,
+td {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -75,7 +77,6 @@ h2 {
 
 .navbar .homapp img {
   height: 46px;
-  /* width: 46px; */
 }
 
 .navlinks {
@@ -410,6 +411,12 @@ h2 {
 @media (max-width: 800px) {
   .about {
     margin: 70px 50px;
+  }
+
+  
+  .about p {
+    font-size: 16px;
+    line-height: 25px;
   }
 }
 
@@ -836,7 +843,7 @@ h2 {
   width: 369px;
   height: 980px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   gap: 30px;
@@ -886,13 +893,13 @@ h2 {
 .table table thead th {
   text-align: center;
   padding: 10px;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .table table tr td {
   padding: 25px 0;
   text-align: center;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .table table tr .entry1 {
@@ -920,7 +927,7 @@ h2 {
   .deep-service .card {
     padding: 15px 0px;
     width: 250px;
-    height: 600px;
+    height: 620px;
     gap: 15px;
   }
 
@@ -952,12 +959,12 @@ h2 {
 
   .table table thead th {
     padding: 8px;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .table table tr td {
     padding: 10px 0;
-    font-size: 13px;
+    font-size: 10px;
   }
 
   .table table tr .entry1 {
@@ -1210,6 +1217,11 @@ h2 {
   align-items: center;
   flex-direction: column;
   gap: 40px;
+  transition: 0.5s all;
+}
+
+.commercial .items .item:hover {
+ transform: scale(1.05);
 }
 
 .commercial .items .item .image {
@@ -1277,7 +1289,7 @@ h2 {
 
 @media (max-width: 800px) {
   .commercial {
-    margin: 0px 30px;
+    margin: 50px 30px;
   }
   .commercial .items {
     gap: 30px;
@@ -1422,6 +1434,11 @@ h2 {
   gap: 20px;
   padding: 20px 10px;
   flex-direction: column;
+  transition: 0.5s all;
+}
+
+.scope .scopeElements .element:hover {
+transform: scale(1.05);
 }
 
 .scope .scopeElements .element img {
@@ -1547,7 +1564,6 @@ h2 {
 
 .keyHighlights .key img {
   width: 88px;
-  height: 88px;
 }
 .keyHighlights .key p {
   font-size: 20px;
@@ -1559,20 +1575,17 @@ h2 {
 @media (max-width: 1700px) {
   .keyHighlights {
     margin: 80px 90px;
-
     gap: 70px;
   }
 
   .keyHighlights .key {
     width: 100px;
     height: 150px;
-
     gap: 30px;
   }
 
   .keyHighlights .key img {
     width: 80px;
-    height: 80px;
   }
   .keyHighlights .key p {
     font-size: 14px;
